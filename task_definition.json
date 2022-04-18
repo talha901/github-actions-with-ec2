@@ -1,0 +1,51 @@
+{
+    
+    "executionRoleArn": "arn:aws:iam::301013669305:role/ecsTaskExecutionRole",
+    "containerDefinitions": [
+      {
+        
+        "logConfiguration": {
+          "logDriver": "awslogs",
+          
+          "options": {
+            "awslogs-group": "/ecs/express-task-defination",
+            "awslogs-region": "eu-west-2",
+            "awslogs-stream-prefix": "ecs"
+          }
+        },
+        
+        "portMappings": [
+          {
+            "hostPort": 3000,
+            "protocol": "tcp",
+            "containerPort": 3000
+          }
+        ],
+        
+        
+        "cpu": 0,
+        "environment": [],
+        "mountPoints": [],
+        "volumesFrom": [],
+        
+        "image": "301013669305.dkr.ecr.eu-west-2.amazonaws.com/my-express-app",
+        "name": "express-container"
+      }
+    ],
+    "placementConstraints": [],
+    "memory": "1024",
+    "taskRoleArn": "arn:aws:iam::301013669305:role/ecsTaskExecutionRole",
+    "family": "express-task-defination",
+    
+    "requiresCompatibilities": [
+      "FARGATE"
+    ],
+    "networkMode": "awsvpc",
+    "cpu": "512",
+    "volumes": []
+  }
+
+
+
+
+ 
