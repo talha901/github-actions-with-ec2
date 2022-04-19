@@ -48,4 +48,15 @@ jobs:
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
+
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+        host: ec2-18-168-206-82.eu-west-2.compute.amazonaws.com
+        username: ec2-user
+        key: ${{ secrets.ACTION_PRIVATE_KEY }}
+        script: |
+          docker login
+          docker pull talhabmujahid/java-with-gradle-github-actions
+          docker run --detach  -p 80:8080 talhabmujahid/java-with-gradle-github-actions
          
