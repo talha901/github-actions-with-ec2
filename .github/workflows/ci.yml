@@ -56,6 +56,7 @@ jobs:
         host: ec2-18-168-206-82.eu-west-2.compute.amazonaws.com
         username: ec2-user
         key: |
+          -----BEGIN RSA PRIVATE KEY-----
           MIIEpAIBAAKCAQEAnPDOt3zNRR/wsST9hvqI8YIN7X8ub90xnyazqePkFWL/6tp9
           2QB8BhlCGp2BYELzdM0w/kQbki8P7/5YvpLUk+gG1pLonhsLhogKJS8DZbtMxAeC
           7mWd55PDXehrNLs1XFnnRWy6pwG5sEe5iMWY1hgW4uA29DuSGAW+tTgjkwUnA3cj
@@ -81,6 +82,7 @@ jobs:
           7pc48QKBgQCs9sCHDJjU+GlAFPz2huK/00Goqz9G41x/L/+vneWob6iKNIVvGWkf
           cdpXE+dNG1w38cabAa1SRj4Rv9geOjz0IENgiW46a3Cxziw1vq7DCOnx1za1w4ZG
           gbftBn0BtmHjW4hiJ3yKV6SoVMjitNS8Mkop6fac+qOpHfH9R9QnJw==
+          -----END RSA PRIVATE KEY-----
         script: |
           docker login
           docker pull talhabmujahid/java-with-gradle-github-actions
