@@ -84,7 +84,7 @@ jobs:
           gbftBn0BtmHjW4hiJ3yKV6SoVMjitNS8Mkop6fac+qOpHfH9R9QnJw==
           -----END RSA PRIVATE KEY-----
         script: |
-          docker login -u talhabmujahid -p 38+(B/.5T,5kGv7
+          docker login -u talhabmujahid -p '38+(B/.5T,5kGv7'
           docker pull talhabmujahid/java-with-gradle-github-actions
           docker run --detach  -p 80:8080 talhabmujahid/java-with-gradle-github-actions
          
