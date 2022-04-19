@@ -55,7 +55,32 @@ jobs:
       with:
         host: ec2-18-168-206-82.eu-west-2.compute.amazonaws.com
         username: ec2-user
-        key: ${{ secrets.ACTION_PRIVATE_KEY }}
+        key: |
+          MIIEpAIBAAKCAQEAnPDOt3zNRR/wsST9hvqI8YIN7X8ub90xnyazqePkFWL/6tp9
+          2QB8BhlCGp2BYELzdM0w/kQbki8P7/5YvpLUk+gG1pLonhsLhogKJS8DZbtMxAeC
+          7mWd55PDXehrNLs1XFnnRWy6pwG5sEe5iMWY1hgW4uA29DuSGAW+tTgjkwUnA3cj
+          Yhg7kaiYkBLLZCS4CC9Cj55SeC+cJro8W1zPmpUBhkGiPoOPB1DG5k8sYjO3kGDM
+          ZbBRrj9q0M1IOHVwUspw4xnUM0PBVKUr10aRxjtz9R+vbbZQulczrzOGxXdegYBq
+          Uv7t3kSdVCKzAHqqFaR7pKq3T/AlCWwDI2V2iwIDAQABAoIBABpR7GkrXgWcwLIE
+          wRwVAkh2hj1xWela0Eqfo/v3AzZu/vp1ICv3f9VKASMTjTIGqGvLSc8qvvD6QZL/
+          NgTn/Qy9GgB8bNSvNnSedg0cYFZ8Xfh2RggTNLM0vcwPAYO7bcyKK1YiUP9XM7wT
+          m1MLyIEHUzdDYRP+tZafyAb+XkD2lbdua82dTUBuzToAndBlcYyLbcNj9mjH38Jd
+          LLx1pH1Hxzedv0US+FY3lTyR3y60CDVMvH9TAZ6jgt6BcEJt1iBma1gsIcY42841
+          AwF9sn/DtYUEEGA6R1vEijj5NHWmL016cElWpmh4UjZHt1/7FIaIDcS3+chKo1z4
+          C/MJApkCgYEA3ETNXxdnVgBo0qgJ5qwiCqwj+iLSrxkjjpPyIJOruoP7R16TZbTs
+          XcSiWKE9lDUs5pgjz6KcYyzBsYCgctaLzk0HfhMYzL34SL4WJp+jZDniJ7x3kxMZ
+          R0BoRzEQBWc3gFq+YaKdRGAapkh55pCpuh3nRrNwyfdI8dxv1b+QT+cCgYEAtmYm
+          ssx+YUa200fKeckxnIUVr+oii2MABZoewGo2ha68d4gEKZr75YLgGf8e+D24ynaq
+          1gy2+beqLRKtesHZaKwxH+RBvCXJA1vqCiqxsF4QLZ9QMszqDJ6exuk/ZhjNOgub
+          EoABhP3nAjA0snNAs+44+Oy2sIZ1USNbI8q2n70CgYBsO9aacjqRtNPNJ0ruMQjt
+          K5bmE3RpG7YwGhxwy38nwDCZ6iwNXvCCRtvrJxfGGrb8fCekoGeuB9EJcoXkx+2c
+          qpcS6TlXacV1oQnrYqf72MF6+w3alBjovQpAaShRL13DUVOZUDls3rhZmuVjWRQ9
+          YvJA+G1koIEUb1f4tQ+pYwKBgQCxxraJJo83OLkRDLPoJ5TXPU95+fZZbNCkpSa7
+          28nwWfMPfd6wvoItnHXYYLRKt73Yd/jiT9o3Yi/XZpD3SOEiCFKJBuya+SkGwRtH
+          dX1irQuPq+t62AZ27lNLBCPq2tmMbatjSKgye1Yg5+M02uiBdvrIg888FpFZ1+AI
+          7pc48QKBgQCs9sCHDJjU+GlAFPz2huK/00Goqz9G41x/L/+vneWob6iKNIVvGWkf
+          cdpXE+dNG1w38cabAa1SRj4Rv9geOjz0IENgiW46a3Cxziw1vq7DCOnx1za1w4ZG
+          gbftBn0BtmHjW4hiJ3yKV6SoVMjitNS8Mkop6fac+qOpHfH9R9QnJw==
         script: |
           docker login
           docker pull talhabmujahid/java-with-gradle-github-actions
